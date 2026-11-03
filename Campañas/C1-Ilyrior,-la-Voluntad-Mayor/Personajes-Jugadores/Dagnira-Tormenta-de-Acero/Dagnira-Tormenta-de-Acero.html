@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr"><head><title>Dagnira Tormenta de Acero · Eldoria</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Eldoria"/><meta property="og:title" content="Dagnira Tormenta de Acero · Eldoria"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Dagnira Tormenta de Acero · Eldoria"/><meta name="twitter:description" content="Vuelta a C1 Ilyrior, la Voluntad Mayor Trasfondo: Dagnira Tormenta de Acero - Trasfondo."/><meta property="og:description" content="Vuelta a C1 Ilyrior, la Voluntad Mayor Trasfondo: Dagnira Tormenta de Acero - Trasfondo."/><meta property="og:image:alt" content="Vuelta a C1 Ilyrior, la Voluntad Mayor Trasfondo: Dagnira Tormenta de Acero - Trasfondo."/><meta property="og:image" content="https://mundo-eldoria.github.io/wiki/static/og-image.png"/><meta property="og:image:url" content="https://mundo-eldoria.github.io/wiki/static/og-image.png"/><meta name="twitter:image" content="https://mundo-eldoria.github.io/wiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="mundo-eldoria.github.io/wiki"/><meta property="og:url" content="https://mundo-eldoria.github.io/wiki/Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/Dagnira-Tormenta-de-Acero"/><meta property="twitter:url" content="https://mundo-eldoria.github.io/wiki/Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/Dagnira-Tormenta-de-Acero"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="Vuelta a C1 Ilyrior, la Voluntad Mayor Trasfondo: Dagnira Tormenta de Acero - Trasfondo."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvX3RlbXAvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/Dagnira-Tormenta-de-Acero"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">Eldoria</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Buscar</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Busca algo" placeholder="Busca algo"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Modo oscuro"><title>Modo oscuro</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Modo claro"><title>Modo claro</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-66"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorador</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-66" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-1"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">Inicio</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../Campañas/">Campañas</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/">C1 Ilyrior, la Voluntad Mayor</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/">Personajes Jugadores</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/">Dagnira Tormenta de Acero</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Dagnira Tormenta de Acero</a></div></nav><h1 class="article-title">Dagnira Tormenta de Acero</h1><div class="toc mobile-only"><button type="button" class="toc-header" aria-controls="toc-18" aria-expanded="true"><h3>Tabla de Contenidos</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#rasgos-atributos-y-dotes" data-for="rasgos-atributos-y-dotes">Rasgos, Atributos y Dotes</a></li><li class="depth-0"><a href="#barda---colegio-de-las-espadas" data-for="barda---colegio-de-las-espadas">Barda - Colegio de las espadas</a></li><li class="depth-0"><a href="#pendiente-de-nivel-9" data-for="pendiente-de-nivel-9">Pendiente de nivel 9</a></li><li class="depth-0"><a href="#conjuros" data-for="conjuros">Conjuros</a></li><li class="depth-0"><a href="#tu-turno" data-for="tu-turno">Tu turno</a></li><li class="depth-0"><a href="#objetos-mágicos" data-for="objetos-mágicos">Objetos mágicos</a></li><li class="depth-0"><a href="#inventario" data-for="inventario">Inventario</a></li><li class="depth-0"><a href="#bendición" data-for="bendición">Bendición</a></li><li class="overflow-end"></li></ul></div></div></div><article class="popover-hint"><p>Vuelta a <a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/C1-Ilyrior,-la-Voluntad-Mayor" class="internal alias" data-slug="Campañas/C1-Ilyrior,-la-Voluntad-Mayor/C1-Ilyrior,-la-Voluntad-Mayor">C1 Ilyrior, la Voluntad Mayor</a></p>
+<p>Trasfondo: <a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/Dagnira-Tormenta-de-Acero---Trasfondo" class="internal alias" data-slug="Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/Dagnira-Tormenta-de-Acero---Trasfondo">Dagnira Tormenta de Acero - Trasfondo</a>.</p>
+<p><strong>Movimiento:</strong> 30 pies (6 casillas)<br/>
+<strong>Clase de Armadura:</strong> 16 (cuero tachonado 12 + DES 3 + capa de protección 1)<br/>
+<strong>Puntos de Golpe:</strong> 93<br/>
+<strong>Bono de Competencia:</strong> +4<br/>
+<strong>Iniciativa:</strong> +3.16<br/>
+<strong>Dados de Golpe:</strong> 9d8</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Característica</th><th>Mod</th><th>TS</th><th>Habilidades</th></tr></thead><tbody><tr><td>FUERZA</td><td>+0</td><td>+1 (capa +1)</td><td>🟨 Atletismo +2</td></tr><tr><td>DESTREZA</td><td>+3</td><td>+8 (capa +1)</td><td>🟩🟩 Acrobacias +11 <br/>🟨 Juego de manos +5 <br/>🟩 Sigilo +7</td></tr><tr><td>CONSTITUCIÓN</td><td>+2</td><td>+3 (capa +1)</td><td></td></tr><tr><td>INTELIGENCIA</td><td>-1</td><td>+0 (capa +1)</td><td>🟨 Arcana +1 <br/>🟨 Historia +1 <br/>🟨 Investigación +1 <br/>🟨 Naturaleza +1 <br/>🟨 Religión +1</td></tr><tr><td>SABIDURÍA</td><td>+0</td><td>+1 (capa +1)</td><td>🟨 Trato con animales +2 <br/>🟨 Perspicacia +2 <br/>🟨 Medicina +2 <br/>🟨 Percepción +2 <br/>🟨 Supervivencia +2</td></tr><tr><td>CARISMA</td><td>+3</td><td>+8 (capa +1)</td><td>🟩🟩 Engaño +11 <br/>🟨 Interpretación +5 <br/>🟩 Intimidación +7 <br/>🟩 Persuasión +7</td></tr></tbody></table></div>
+<h2 id="rasgos-atributos-y-dotes">Rasgos, Atributos y Dotes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rasgos-atributos-y-dotes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="enana">Enana<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enana" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Visión en la oscuridad</strong>. Tienes <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Visión-en-la-oscuridad-(regla)" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Visión-en-la-oscuridad-(regla)">Visión en la oscuridad</a> 120 pies (24 casillas).</li>
+<li><strong>Resiliencia enana</strong>. Tienes resistencia al daño por <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Veneno</a>. Tienes ventaja en las <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Tiradas de salvación</a> para evitar o terminar el estado <a href="../../../../Reglas/D-and-D-5.5ed/Estados/Envenenado" class="internal" data-slug="Reglas/D-and-D-5.5ed/Estados/Envenenado">Envenenado</a>.</li>
+<li><strong>Fortaleza enana</strong>. Tus puntos de golpe aumentan en uno cada nivel.</li>
+<li><strong>Afinidad con la piedra</strong>. 🟡</li>
+</ul>
+<h4 id="competencias">Competencias<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#competencias" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Armaduras ligeras y medias.</li>
+<li>Armas simples y cimitarras.</li>
+<li>Chirimía, Lira, Gaita y Cuerno.</li>
+</ul>
+<h4 id="idiomas">Idiomas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#idiomas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Común, enano y gigante.</p>
+<h4 id="dotes">Dotes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dotes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Duro</strong>. Tus puntos de golpe aumentan en 2 cada nivel.</li>
+<li><strong>Lanzador de guerra</strong>. Carisma.
+<ul>
+<li>Concentración. Tienes <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Ventaja" class="internal" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Ventaja">Ventaja</a> en las <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Tiradas de salvación</a> de Constitución que realices para mantener la <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Concentración" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Concentración">Concentración</a>.</li>
+<li>Conjuro reactivo. 🔴</li>
+<li>Componentes somáticos. Puedes realizar los <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Componentes" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Componentes">componentes somáticos</a> de los conjuros incluso con armas o un escudo en una o ambas manos.</li>
+</ul>
+</li>
+<li><strong>Tocado por las sombras</strong>. Carisma.
+<ul>
+<li>Conoces <a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Invisibilidad" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Invisibilidad">Invisibilidad</a> y <a href="https://5e.tools/spells.html#wrathful%20smite_xphb" class="external">Castigo airado<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (nigromancia).</li>
+<li>Puedes lanzar cada uno 1 vez por <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Descanso-Largo" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Descanso-Largo">Descanso Largo</a> sin gastar espacio. También puedes lanzarlos con tus espacios de conjuro.</li>
+</ul>
+</li>
+</ul>
+<h2 id="barda---colegio-de-las-espadas">Barda - Colegio de las espadas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#barda---colegio-de-las-espadas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="nivel-1">Nivel 1<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Inspiración bárdica (IB)</strong>. 1d8. 🟡</li>
+<li><strong>Lanzamiento de conjuros</strong>. Puedes usar un instrumento musical como <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Canalizador-mágico" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Canalizador-mágico">canalizador</a>. Cada vez que subes de nivel puedes cambiar 1 conjuro y 1 truco.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">Aptitud mágica</th><th style="text-align:center;">CD de TS de conjuros</th><th style="text-align:center;">Bonificación al ataque</th></tr></thead><tbody><tr><td style="text-align:center;">Carisma</td><td style="text-align:center;">15</td><td style="text-align:center;">+7</td></tr></tbody></table></div>
+<h4 id="nivel-2">Nivel 2<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong><a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Pericia" class="internal" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Pericia">Pericia</a></strong>. Acrobacias y Engaño.</li>
+<li><strong>Aprendiz de todo</strong>. Sumas la mitad de tu bonificador por competencia a las pruebas de característica de habilidades en las que no seas competente.</li>
+</ul>
+<h4 id="nivel-3">Nivel 3<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Competencias adicionales</strong>. Armadura media y cimitarra. Puedes usar como <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Canalizador-mágico" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Canalizador-mágico">canalizador</a> de tus conjuros de bardo un arma cuerpo a cuerpo simple o marcial con la que seas competente.</li>
+<li><strong>Estilo de combate (Combate con dos armas)</strong>. Cuando haces el ataque extra de un arma ligera, sumas tu modificador de característica al daño de ese ataque.</li>
+<li><strong>Floritura con la hoja</strong>. Cuando haces la acción de <a href="../../../../Reglas/D-and-D-5.5ed/Acciones/Atacar" class="internal" data-slug="Reglas/D-and-D-5.5ed/Acciones/Atacar">Atacar</a>, tu velocidad aumenta 10 pies (2 casillas) hasta el final del turno. Si golpeas con un ataque de esa acción, puedes gastar un dado de tu IB para obtener uno de los siguientes beneficios (solo uno por turno):
+<ul>
+<li><em>Floritura defensiva</em>. Dado extra de daño y lo sumas a tu CA hasta el inicio de tu siguiente turno.</li>
+<li><em>Floritura móvil</em>. Dado extra de daño y empujas al objetivo 5 pies (1 casilla) más tantos pies como saques en el dado (1 casilla más por cada 5). Después puedes usar tu 🔴 para moverte hasta tu velocidad a un espacio libre a 5 pies (1 casilla) del objetivo.</li>
+<li><em>Floritura cortante</em>. Dado extra de daño al objetivo y, además, ese mismo daño a cada otra criatura que elijas y puedas ver a 5 pies (1 casilla) de ti.</li>
+</ul>
+</li>
+</ul>
+<h4 id="nivel-4">Nivel 4<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Dote</strong>. Lanzador de guerra.</li>
+</ul>
+<h4 id="nivel-5">Nivel 5<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Fuente de inspiración</strong>. Recuperas todos tus usos de IB cada <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Descanso-Corto" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Descanso-Corto">Descanso Corto</a> y <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Descanso-Largo" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Descanso-Largo">Descanso Largo</a>. Puedes gastar 1 espacio de conjuro de cualquier nivel para recuperar 1 uso de IB.</li>
+</ul>
+<h4 id="nivel-6">Nivel 6<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Ataque extra</strong>. ⚪</li>
+</ul>
+<h4 id="nivel-7">Nivel 7<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Contraencantamiento</strong>. 🔴</li>
+</ul>
+<h4 id="nivel-8">Nivel 8<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-8" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Dote</strong>. Tocado por las sombras.</li>
+</ul>
+<h4 id="nivel-9">Nivel 9<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nivel-9" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong><a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Pericia" class="internal" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Pericia">Pericia</a></strong>. Dos habilidades más, por elegir.</li>
+<li><strong>Espacio de conjuro de nivel 5</strong>. Preparas 2 conjuros más (14 en total).</li>
+</ul>
+<h2 id="pendiente-de-nivel-9">Pendiente de nivel 9<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pendiente-de-nivel-9" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> ¿En qué dos habilidades gana Pericia? Tienen que ser habilidades en las que ya es competente: Sigilo, Intimidación o Persuasión.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> ¿Qué dos conjuros nuevos aprende? Pueden ser de nivel 5.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> ¿Cambia algún conjuro o truco? Al subir de nivel puede cambiar 1 de cada.</li>
+</ul>
+<h2 id="conjuros">Conjuros<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conjuros" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Trucos</th><th>Nivel 1</th><th>Nivel 2</th><th>Nivel 3</th><th>Nivel 4</th><th>Tocado por las sombras</th></tr></thead><tbody><tr><td><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Luz" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Luz">Luz</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Mano-de-mago" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Mano-de-mago">Mano de mago</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Burla-dañina" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Burla-dañina">Burla dañina</a></td><td><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Hechizar-persona" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Hechizar-persona">Hechizar persona</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Curar-heridas" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Curar-heridas">Curar heridas</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Susurros-discordantes" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Susurros-discordantes">Susurros discordantes</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Dormir" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-1/Dormir">Dormir</a></td><td><a href="https://5e.tools/spells.html#cloud%20of%20daggers_xphb" class="external">Nube de dagas<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Calentar-metal" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Calentar-metal">Calentar metal</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Hacer-añicos" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Hacer-añicos">Hacer añicos</a></td><td><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-3/Disipar-magia" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-3/Disipar-magia">Disipar magia</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-3/Ralentizar" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-3/Ralentizar">Ralentizar</a><br/><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-3/Pequeña-choza" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-3/Pequeña-choza">Pequeña choza</a></td><td><a href="https://5e.tools/spells.html#fount%20of%20moonlight_xphb" class="external">Fuente de luz de luna<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><br/><a href="https://5e.tools/spells.html#backlash_frhof" class="external">Contragolpe<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Invisibilidad" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Invisibilidad">Invisibilidad</a><br/><a href="https://5e.tools/spells.html#wrathful%20smite_xphb" class="external">Castigo airado<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr></tbody></table></div>
+<ul>
+<li><em>Nivel 9: 2 conjuros nuevos por elegir.</em></li>
+</ul>
+<h2 id="tu-turno">Tu turno<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tu-turno" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="-acción-gratuita">⚫ Acción gratuita<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-acción-gratuita" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Floritura con la hoja (1/turno)</strong>. Al golpear con un ataque de la acción de <a href="../../../../Reglas/D-and-D-5.5ed/Acciones/Atacar" class="internal" data-slug="Reglas/D-and-D-5.5ed/Acciones/Atacar">Atacar</a>, añades 1 dado de IB al daño. <em>Floritura defensiva</em>, <em>Floritura móvil</em> o <em>Floritura cortante</em>.</li>
+</ul>
+<h4 id="-pasivas">⚪ Pasivas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-pasivas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Ataque extra</strong>. Cuando realizas la acción de <a href="../../../../Reglas/D-and-D-5.5ed/Acciones/Atacar" class="internal" data-slug="Reglas/D-and-D-5.5ed/Acciones/Atacar">Atacar</a> en tu turno, atacas 2 veces en lugar de 1.</li>
+</ul>
+<h4 id="-acción">🔵 Acción<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-acción" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h4 id="ataques">Ataques<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ataques" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>⚔️ <strong>Cimitarra +1 (x2)</strong>. <em>Obtienes 10 pies (2 casillas) más de movimiento</em>. +8. 1d6+4 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Físico</a>. <em>Floritura con la hoja</em>.</li>
+<li>⚔️ <strong>Cimitarra (x2)</strong>. <em>Obtienes 10 pies (2 casillas) más de movimiento</em>. +7. 1d6+3 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Físico</a>. <em>Floritura con la hoja</em>.</li>
+<li>⚔️🏹 <strong>Daga (x2)</strong>. <em>Obtienes 10 pies (2 casillas) más de movimiento</em>. Alcance 20/60 pies (4/12 casillas). +7. 1d4+3 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Físico</a>. <em>Floritura con la hoja</em>.</li>
+</ul>
+<h4 id="conjuros-1">Conjuros<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conjuros-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">1</th><th style="text-align:center;">2</th><th style="text-align:center;">3</th><th style="text-align:center;">4</th><th style="text-align:center;">5</th><th style="text-align:center;">6</th><th style="text-align:center;">7</th><th style="text-align:center;">8</th><th style="text-align:center;">9</th></tr></thead><tbody><tr><td style="text-align:center;">4</td><td style="text-align:center;">3</td><td style="text-align:center;">3</td><td style="text-align:center;">3</td><td style="text-align:center;">1</td><td style="text-align:center;"></td><td style="text-align:center;"></td><td style="text-align:center;"></td><td style="text-align:center;"></td></tr></tbody></table></div>
+<ul>
+<li><strong><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Mano-de-mago" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Mano-de-mago">Mano de mago</a></strong>. (V, S)</li>
+<li><strong><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Burla-dañina" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Burla-dañina">Burla dañina</a></strong>. (V) Alcance 60 pies (12 casillas). <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Tirada de salvación</a> de SAB con CD 15. <em>Fallo</em>: 2d6 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Psíquico</a> + desventaja en su siguiente ataque.</li>
+<li><strong><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Luz" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Luz">Luz</a></strong>. (V, M) Tocas un objeto de tamaño <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tamaño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tamaño">Grande</a> o menor que nadie lleve ni transporte. Emite luz brillante en 20 pies (4 casillas) y <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Luz-tenue" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Luz-tenue">Luz tenue</a> 20 pies más durante 1 hora.</li>
+<li><strong><a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Invisibilidad" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Nivel-2/Invisibilidad">Invisibilidad</a> (1/Descanso Largo sin espacio)</strong>. Concentración, 1 hora. Una criatura que toques se vuelve <a href="../../../../Reglas/D-and-D-5.5ed/Estados/Invisible" class="internal" data-slug="Reglas/D-and-D-5.5ed/Estados/Invisible">Invisible</a> hasta que ataque, haga daño o lance un conjuro.</li>
+<li><strong>Lanzar un conjuro</strong>.</li>
+</ul>
+<h4 id="-acción-adicional">🟡 Acción adicional<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-acción-adicional" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Inspiración bárdica (CAR/descanso corto y largo)</strong>. Inspiras a otra criatura a 60 pies (12 casillas) que pueda verte u oírte. Durante 1 hora, cuando falle una prueba con d20, puede sumarle el dado.</li>
+<li><strong><a href="https://5e.tools/spells.html#wrathful%20smite_xphb" class="external">Castigo airado<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (1/Descanso Largo sin espacio)</strong>. Justo después de golpear con un arma cuerpo a cuerpo o un ataque sin armas. +1d6 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Necrótico</a> (+1d6 por nivel de espacio por encima de 1) y <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Tirada de salvación</a> de SAB con CD 15. <em>Fallo</em>: <a href="../../../../Reglas/D-and-D-5.5ed/Estados/Asustado" class="internal" data-slug="Reglas/D-and-D-5.5ed/Estados/Asustado">Asustado</a> durante 1 minuto; repite la salvación al final de cada uno de sus turnos.</li>
+<li><strong>Afinidad con la piedra (BC/Descanso Largo)</strong>. Obtienes <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Sentir-vibraciones" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Sentir-vibraciones">Sentir vibraciones</a> con alcance de 60 pies (12 casillas) durante 10 minutos. Tienes que estar sobre una superficie de piedra o tocándola.</li>
+</ul>
+<h4 id="ataques-1">Ataques<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ataques-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>⚔️ <strong>Cimitarra +1</strong>. +8. 1d6+4 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Físico</a>.</li>
+<li>⚔️ <strong>Cimitarra</strong>. +7. 1d6+3 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Físico</a>.</li>
+<li>⚔️🏹 <strong>Daga</strong>. +7. 1d4+3 de daño <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Tipos-de-daño">Físico</a>.</li>
+</ul>
+<h4 id="conjuros-2">Conjuros<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conjuros-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Lanzar un conjuro</strong>. <em>Solo puedes gastar un espacio de conjuro por turno (los trucos no gastan)</em>.</li>
+</ul>
+<h4 id="utilidades">Utilidades<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#utilidades" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>🧪 <strong>Poción de curación</strong>, 2d4+2 de curación</li>
+<li>🧪 <strong>Poción de curación (mayor)</strong>, 4d4+4 de curación</li>
+<li>🧪 <strong>Poción de curación (superior)</strong>, 8d4+8 de curación</li>
+<li>🧪 <strong>Poción de curación (suprema)</strong>, 10d4+20 de curación</li>
+</ul>
+<h4 id="-reacción">🔴 Reacción<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-reacción" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Floritura móvil</strong>. <em>Desencadenante</em>: Si tu 🔵 ha sido <a href="../../../../Reglas/D-and-D-5.5ed/Acciones/Atacar" class="internal" data-slug="Reglas/D-and-D-5.5ed/Acciones/Atacar">Atacar</a> y has gastado un uso de tu IB para hacer <em>Floritura móvil</em>. Te mueves hasta tu velocidad a un espacio no ocupado a 5 pies (1 casilla) del objetivo del ataque.</li>
+<li><strong>Conjuro reactivo</strong>. Cuando una criatura te provoca un <a href="../../../../Reglas/D-and-D-5.5ed/Combate/Ataque-de-oportunidad" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Combate/Ataque-de-oportunidad">Ataque de oportunidad</a>, en su lugar puedes lanzarle un conjuro cuyo tiempo de lanzamiento sea una acción y que apunte solo a ella.</li>
+<li><strong>Contraencantamiento</strong>. Si tú o una criatura a 30 pies (6 casillas) o menos de ti falla una <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Tirada de salvación</a> contra un efecto que aplica o termina el estado de <a href="../../../../Reglas/D-and-D-5.5ed/Estados/Hechizado" class="internal" data-slug="Reglas/D-and-D-5.5ed/Estados/Hechizado">Hechizado</a> o <a href="../../../../Reglas/D-and-D-5.5ed/Estados/Asustado" class="internal" data-slug="Reglas/D-and-D-5.5ed/Estados/Asustado">Asustado</a>, puedes usar tu reacción para que vuelva a tirar la <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Salvación</a> y la nueva tirada tiene <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Ventaja" class="internal" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Ventaja">Ventaja</a>.</li>
+</ul>
+<h2 id="objetos-mágicos">Objetos mágicos<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#objetos-mágicos" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>🧿‼️ <strong><a href="https://5e.tools/items.html#cloak%20of%20protection_xdmg" class="external">Capa de protección<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong>. +1 a la CA y a las TS. <em>Sumado en la CA y las TS.</em></li>
+<li>🧿 <strong><a href="https://5e.tools/items.html#ring%20of%20puzzler%27s%20wit_bmt" class="external">Anillo del Ingenio del Acertijo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong>. 3 cargas; recupera 1d4−1 al amanecer. Al hacer una prueba de Inteligencia, gastas 1 carga para tener <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Ventaja" class="internal" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Ventaja">Ventaja</a>.</li>
+<li>🧿‼️ <strong><a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Objetos-mágicos/Objetos-propios-de-C1/Espada-corta-venenosa" class="internal alias" data-slug="Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Objetos-mágicos/Objetos-propios-de-C1/Espada-corta-venenosa">Espada corta venenosa</a></strong>. <em>En los ataques.</em></li>
+<li>🧿 <strong><a href="https://5e.tools/items.html#%2B1%20scimitar_xdmg" class="external">Cimitarra +1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong>. <em>En los ataques.</em></li>
+<li>🧿 <strong><a href="https://5e.tools/items.html#pearl%20of%20power_xdmg" class="external">Perla de poder<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> <em>(sin sintonizar)</em>. Sintonizada, 🔵 recuperas un espacio de conjuro de nivel 3 o menos, 1 vez al día. Sin sintonizar no se puede usar.</li>
+<li>🧿 <strong><a href="https://5e.tools/items.html#sylvan%20talon%20dagger_xdmg" class="external">Sylvan Talon (daga)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> <em>(guardada, pide sintonización)</em>. Entiendes la comunicación no escrita de los feéricos, y ellos la tuya. 1 vez al día lanzas <a href="../../../../Reglas/D-and-D-5.5ed/Conjuros/Trucos/Mensaje" class="internal" data-slug="Reglas/D-and-D-5.5ed/Conjuros/Trucos/Mensaje">Mensaje</a> con ella.</li>
+<li>🧿 <strong><a href="https://5e.tools/items.html#horn%20of%20silent%20alarm_xdmg" class="external">Cuerno de Alarma Silenciosa<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong>. 4 cargas; recupera 1d4 al amanecer. 🔵 Gastas 1: solo lo oye una criatura que elijas a 600 pies (120 casillas).</li>
+</ul>
+<h2 id="inventario">Inventario<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inventario" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>🧿 mágico · ‼️ sintonizado (máx. 3) · ⚖️ <a href="../../../../Reglas/Homebrew/Inventario-e-Impedimenta" class="internal alias" data-slug="Reglas/Homebrew/Inventario-e-Impedimenta">impedimenta</a> (L = ligero; sin ⚖️ = insignificante; 300 monedas = L)</p>
+<p><strong>⚖️ Total:</strong> 4 y 3 L de 5 · 🎒 Mochila: 2,1 de 4 (las 2 primeras no cuentan)</p>
+<p><strong>🧍 Puesto</strong></p>
+<ul>
+<li>1 × 🦺 <strong>Armadura de cuero tachonado</strong> · ⚖️ 1</li>
+<li>1 × 🧿‼️ <strong><a href="https://5e.tools/items.html#cloak%20of%20protection_xdmg" class="external">Capa de protección<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> · ⚖️ L</li>
+<li>1 × 🎒 <strong>Mochila</strong></li>
+<li>1 × 🧥 <strong>Ropa de invierno</strong> · ⚖️ L</li>
+<li>1 × 🧿 <strong><a href="https://5e.tools/items.html#ring%20of%20puzzler%27s%20wit_bmt" class="external">Anillo del Ingenio del Acertijo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> · ⚖️ L</li>
+</ul>
+<p><strong>✅ Preparado</strong></p>
+<ul>
+<li>🪙 <strong>Saquillo con monedas</strong> (5.582 monedas: 5.530 de oro y 52 de platino) · ⚖️ 1 y 8 L</li>
+<li>1 × 📯 <strong>Cuerno (runas)</strong> · ⚖️ L</li>
+<li>1 × 🧿 <strong><a href="https://5e.tools/items.html#pearl%20of%20power_xdmg" class="external">Perla de poder<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong></li>
+<li>⚔️ <strong>Armas</strong>
+<ul>
+<li>1 × 🧿 <strong><a href="https://5e.tools/items.html#%2B1%20scimitar_xdmg" class="external">Cimitarra +1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> · ⚖️ 1</li>
+</ul>
+</li>
+</ul>
+<p><strong>💼 Guardado</strong></p>
+<ul>
+<li>🧿 <strong>Mágicos</strong>
+<ul>
+<li>1 × 🧿 <strong><a href="https://5e.tools/items.html#sylvan%20talon%20dagger_xdmg" class="external">Sylvan Talon (daga)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> · ⚖️ L</li>
+<li>1 × 🧿 <strong><a href="https://5e.tools/items.html#horn%20of%20silent%20alarm_xdmg" class="external">Cuerno de Alarma Silenciosa<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> · ⚖️ L</li>
+</ul>
+</li>
+<li>📦 <strong>No mágicos</strong>
+<ul>
+<li>1 × <strong>Daga</strong> · ⚖️ L</li>
+<li>1 × <strong>Cimitarra</strong> · ⚖️ 1</li>
+<li>1 × <strong>Saco de dormir</strong> · ⚖️ L</li>
+<li>1 × <strong>Odre</strong> · ⚖️ L</li>
+<li>1 × <strong>Yesca y pedernal</strong></li>
+<li>1 × <strong>50 pies de cuerda</strong> · ⚖️ L</li>
+<li>1 × <strong>Frasco de aceite</strong> · ⚖️ L</li>
+<li>1 × <strong>Espejo</strong></li>
+<li>1 × <strong>Disfraz (noble)</strong> · ⚖️ L</li>
+<li>1 × <strong>Disfraz (gitana)</strong> · ⚖️ L</li>
+<li>2 × <strong>Pájaros de papel</strong> · ⚖️ L</li>
+</ul>
+</li>
+</ul>
+<h2 id="bendición">Bendición<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bendición" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="bendición-del-cometa">Bendición del cometa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bendición-del-cometa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Como acción, puedes obligar a una criatura que puedas ver dentro de 60 pies (12 casillas) de ti a centrarse en ti. Durante 1 minuto, las criaturas que no seas ni tú ni el objetivo son invisibles para este. El efecto termina si cualquier criatura que no seas tú daña al objetivo o lo obliga a realizar una <a href="../../../../Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación" class="internal alias" data-slug="Reglas/D-and-D-5.5ed/Términos-comunes/Tiradas-de-salvación">Tirada de salvación</a>. Una vez usado tres veces, esta bendición se desvanece de ti.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Vista Gráfica</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-19" aria-expanded="true"><h3>Tabla de Contenidos</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-2" class="toc-content overflow"><li class="depth-0"><a href="#rasgos-atributos-y-dotes" data-for="rasgos-atributos-y-dotes">Rasgos, Atributos y Dotes</a></li><li class="depth-0"><a href="#barda---colegio-de-las-espadas" data-for="barda---colegio-de-las-espadas">Barda - Colegio de las espadas</a></li><li class="depth-0"><a href="#pendiente-de-nivel-9" data-for="pendiente-de-nivel-9">Pendiente de nivel 9</a></li><li class="depth-0"><a href="#conjuros" data-for="conjuros">Conjuros</a></li><li class="depth-0"><a href="#tu-turno" data-for="tu-turno">Tu turno</a></li><li class="depth-0"><a href="#objetos-mágicos" data-for="objetos-mágicos">Objetos mágicos</a></li><li class="depth-0"><a href="#inventario" data-for="inventario">Inventario</a></li><li class="depth-0"><a href="#bendición" data-for="bendición">Bendición</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Retroenlaces</h3><ul id="list-3" class="overflow"><li><a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/C1-Ilyrior,-la-Voluntad-Mayor" class="internal">C1 Ilyrior, la Voluntad Mayor</a></li><li><a href="../../../../Campañas/C1-Ilyrior,-la-Voluntad-Mayor/Personajes-Jugadores/Dagnira-Tormenta-de-Acero/Dagnira-Tormenta-de-Acero---Trasfondo" class="internal">Dagnira Tormenta de Acero - Trasfondo</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Creado con <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>
