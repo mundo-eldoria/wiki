@@ -1,0 +1,33 @@
+# Pone en línea la web de Eldoria en GitHub Pages cada vez que llega a gh-pages.
+# No se usa en esta bóveda: publicar.yml lo copia, con la web compilada, al repo público.
+name: Desplegar la web
+
+on:
+  push:
+    branches: [gh-pages]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # Sube la web sin .git ni .github.
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - id: despliegue
+        uses: actions/deploy-pages@v4
